@@ -25,7 +25,7 @@ module "networking" {
 
 module "servers" {
   source                 = "./modules/servers"
-  bastion_sg             = module.networking.frontend_app_sg
+  bastion_sg             = module.networking.bastion_sg
   frontend_app_sg        = module.networking.frontend_app_sg
   backend_app_sg         = module.networking.backend_app_sg
   public_subnets         = module.networking.public_subnets
