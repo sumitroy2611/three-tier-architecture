@@ -27,6 +27,8 @@
     - `terraform destroy --auto-approve`
 
 Here's how the high-level architecture looks:
+
+
 ![Architectural Diagram](https://user-images.githubusercontent.com/53339968/196566152-c8cf8aa3-a872-4e6a-b74e-6d0874b6ce19.jpg)
 
 
