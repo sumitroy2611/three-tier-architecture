@@ -25,3 +25,7 @@
  ## How to destroy the infra components
 - Run the following command to destroy all the components created in above stages
     - `terraform destroy --auto-approve`
+
+Here's how the architecture looks like:
+
+![ArchitecturalDiagram](https://user-images.githubusercontent.com/53339968/196565799-e7a0a538-a956-430a-adea-0b1f51dbb8de.jpg)
