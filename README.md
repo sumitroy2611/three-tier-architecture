@@ -26,6 +26,7 @@
 - Run the following command to destroy all the components created in above stages
     - `terraform destroy --auto-approve`
 
-Here's how the architecture looks like:
+Here's how the high-level architecture looks:
+![Architectural Diagram](https://user-images.githubusercontent.com/53339968/196566152-c8cf8aa3-a872-4e6a-b74e-6d0874b6ce19.jpg)
 
-![ArchitecturalDiagram](https://user-images.githubusercontent.com/53339968/196565799-e7a0a538-a956-430a-adea-0b1f51dbb8de.jpg)
+
