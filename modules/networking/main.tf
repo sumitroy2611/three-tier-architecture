@@ -20,7 +20,7 @@ resource "aws_vpc" "demovpc" {
 /*
 * Internet Gateway Configuration
 */
-# Internet Gateway to give internet access to application servers
+# Internet Gateway to give internet access to public subnet
 resource "aws_internet_gateway" "demogateway" {
   vpc_id = "${aws_vpc.demovpc.id}"
   tags = {
@@ -125,7 +125,7 @@ resource "aws_route_table" "private_rt" {
 #Private route config
 resource "aws_route" "default_private_route" {
   route_table_id         = aws_route_table.private_rt.id
-  destination_cidr_block = "0.0.0.0/0"
+  destination_cidr_block = "${var.vpc_cidr}.0.0/16"
   nat_gateway_id = aws_nat_gateway.ngw.id
 }
 
